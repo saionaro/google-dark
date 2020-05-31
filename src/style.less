@@ -1,100 +1,128 @@
+@main-background: #212124;
+@accent-background: #35363a;
+@main-text: #f9f9f9;
+@disaccent-text: #b9b9b9;
+@accent-text: #d2d2d2;
+@link: #80868b;
+@border: #80868b;
+
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: #1b1b1b !important;
-    color: #f9f9f9 !important;
+    background-color: @main-background !important;
+    color: @main-text !important;
   }
 
   #searchform > div:nth-of-type(2) {
-    background-color: #1b1b1b;
+    background-color: @main-background;
   }
 
   #searchform .logo + div {
-    background-color: #2f3032;
-    border-color: #80868b;
+    background-color: @accent-background;
+    border-color: @border;
   }
 
   #searchform input {
-    color: #f9f9f9;
+    color: @main-text;
   }
 
   #top_nav h1 + div {
-    border-color: #80868b;
+    border-color: @border;
   }
 
   #top_nav h1 + div > div:nth-of-type(1) {
-    background-color: #1b1b1b;
+    background-color: @main-background;
   }
 
   h3 {
-    color: #f9f9f9 !important;
+    color: @main-text !important;
   }
-  /* breadcrumbs */
+  // breadcrumbs
   cite {
-    color: #b9b9b9 !important;
+    color: @disaccent-text !important;
   }
-  /* breadcrumbs */
+  // breadcrumbs
   cite span {
-    color: #b9b9b9 !important;
+    color: @disaccent-text !important;
   }
-  /* translate */
+  // translate
   div div span + a {
-    color: #80868b !important;
+    color: @link !important;
   }
-  /* description */
+  // description
   div div div > div:nth-of-type(2) {
-    color: #80868b;
+    color: @link;
   }
-
+  // description tokens
   div div div > div:nth-of-type(2) em {
-    color: #d2d2d2 !important;
+    color: @accent-text !important;
   }
-  /* results table */
+  // results table
   div > span + div div div a {
-    color: #f9f9f9 !important;
+    color: @accent-text !important;
   }
-  /* another results */
+  // another results
   #extrares .card-section a,
   #extrares .card-section .search-icon {
-    color: #f9f9f9;
+    color: @main-text;
   }
 
   #foot a {
-    color: #f9f9f9 !important;
+    color: @main-text !important;
   }
 
   #foot td {
-    color: #9e9e9e !important;
+    color: @accent-text !important;
   }
 
   #fbar {
-    background-color: #1b1b1b !important;
-    border-color: #80868b !important;
+    background-color: @main-background !important;
+    border-color: @link !important;
   }
 
   #fbar .fbar {
-    border-color: #80868b !important;
+    border-color: @link !important;
   }
 
   #fbar .fbar > * {
-    color: #f9f9f9 !important;
+    color: @main-text !important;
   }
-  /* suggestions dropdown*/
+  // suggestions dropdown
   .logo + div + div > div:nth-of-type(2) {
-    background-color: #2f3032 !important;
+    background-color: @accent-background !important;
   }
-  /* suggestions */
+  // suggestions
   .logo + div + div li div div + div > div {
-    color: #9aa0a6;
+    color: @accent-text;
   }
   .logo + div + div li:hover div div + div > div,
   .logo + div + div li:hover div div + div > div span {
-    color: #2f3032;
+    color: @accent-background;
   }
   .logo + div + div > div + div > div:first-of-type {
-    border-color: #80868b;
+    border-color: @border;
   }
 
   div[role="menu"] {
-    background-color: #2f3032;
+    background-color: @accent-background;
+  }
+  // sidebar border
+  #wp-tabs-container {
+    border-color: @border;
+  }
+
+  [data-attrid="title"] {
+    color: @main-text;
+  }
+
+  [data-attrid="description"] {
+    color: @main-text;
+  }
+
+  svg {
+    color: @accent-text;
+  }
+
+  div div:nth-of-type(2) div div span:first-of-type > a {
+    color: @main-text !important;
   }
 }
