@@ -52,6 +52,52 @@
   div div div > div:nth-of-type(2) {
     color: @link;
   }
+  // similar
+  div div div > div:nth-of-type(3) > div {
+    border-color: @border;
+  }
+
+  div div div > div:nth-of-type(3) > div span[role="button"] {
+    filter: brightness(0) invert(1);
+  }
+
+  div div div > div:nth-of-type(3) > div h4 {
+    color: @main-text;
+  }
+  // rights block
+  h1 + script + div > div > div:nth-of-type(2) a {
+    border-color: @border;
+    background-color: @main-background;
+    color: @main-text;
+  }
+
+  h1 + script + div > div > div:nth-of-type(2) a:hover {
+    background-color: @accent-background;
+  }
+
+  h1 + script + div > div > div:nth-of-type(2) a div {
+    color: @main-text;
+  }
+  // maybe yoy googled
+  h1 + script + div + div > div {
+    border-color: @border !important;
+  }
+  // maybe yoy googled title
+  h1
+    + script
+    + div
+    + div
+    > div
+    a
+    > div
+    > div:nth-of-type(2)
+    > div:first-of-type {
+    color: @main-text !important;
+  }
+  // maybe yoy googled hover
+  h1 + script + div + div > div a > div:hover {
+    background-color: @accent-background !important;
+  }
   // description tokens
   div div div > div:nth-of-type(2) em {
     color: @accent-text !important;
@@ -74,17 +120,30 @@
     color: @accent-text !important;
   }
 
+  #foot span {
+    filter: brightness(0) invert(1);
+  }
+
   #fbar {
     background-color: @main-background !important;
-    border-color: @link !important;
+    border-color: @border !important;
   }
 
   #fbar .fbar {
-    border-color: @link !important;
+    border-color: @border !important;
   }
 
   #fbar .fbar > * {
     color: @main-text !important;
+  }
+  // google logo
+  .logo img {
+    filter: brightness(0) invert(1);
+  }
+  // active tab header
+  div[role="navigation"] div div div div div > div[aria-hidden="true"] {
+    color: @accent-text !important;
+    border-color: @accent-text !important;
   }
   // suggestions dropdown
   .logo + div + div > div:nth-of-type(2) {
@@ -106,23 +165,153 @@
     background-color: @accent-background;
   }
   // sidebar border
-  #wp-tabs-container {
-    border-color: @border;
+  #wp-tabs-container,
+  #wp-tabs-container > div {
+    border-color: @border !important;
   }
 
   [data-attrid="title"] {
-    color: @main-text;
+    color: @main-text !important;
   }
 
   [data-attrid="description"] {
-    color: @main-text;
+    color: @main-text !important;
   }
 
   svg {
     color: @accent-text;
+    filter: brightness(0) invert(1);
   }
 
   div div:nth-of-type(2) div div span:first-of-type > a {
     color: @main-text !important;
   }
+
+  .action-menu > a {
+    background-color: @main-background;
+  }
+
+  .action-menu > a:hover,
+  .action-menu > a.selected:hover,
+  .action-menu > a.selected {
+    background-color: @main-background;
+  }
+
+  .action-menu .action-menu-panel {
+    border-color: @border;
+    background-color: @accent-background;
+    border-radius: 4px;
+  }
+
+  .action-menu .action-menu-item:first-of-type {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+  }
+
+  .action-menu .action-menu-item:last-of-type {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+
+  .action-menu .action-menu-item:hover {
+    background-color: @main-background;
+  }
+  // video widget
+  g-scrolling-carousel g-inner-card {
+    border-color: @border !important;
+    background-color: @accent-background !important;
+  }
+  // duration
+  g-scrolling-carousel
+    g-inner-card
+    > div
+    > a
+    > div:first-of-type
+    > div
+    > div:last-of-type
+    > div:nth-of-type(2) {
+    color: @main-text !important;
+  }
+  // video header
+  g-scrolling-carousel g-inner-card > div > a > div:nth-of-type(2) > div {
+    color: @main-text !important;
+  }
+
+  g-scrolling-carousel
+    g-inner-card
+    > div
+    > div:last-of-type
+    > div:first-of-type
+    > div {
+    color: @disaccent-text !important;
+  }
+
+  g-scrolling-carousel
+    g-inner-card
+    > div
+    > div:last-of-type
+    > div:last-of-type
+    > div {
+    color: @disaccent-text !important;
+  }
+
+  g-scrolling-carousel
+    g-inner-card
+    > div
+    > div:last-of-type
+    > div:last-of-type
+    > div
+    > span {
+    color: @accent-text !important;
+  }
+
+  g-left-button g-fab {
+    background-color: @accent-background !important;
+    border-color: @border !important;
+  }
+
+  g-left-button g-fab span {
+    background-color: @accent-background !important;
+  }
+
+  g-right-button g-fab {
+    background-color: @accent-background !important;
+    border-color: @border !important;
+  }
+
+  g-right-button g-fab span {
+    background-color: @accent-background !important;
+  }
+  // similar searches
+  .appbar #extabar div[role="navigation"] > div:first-of-type {
+    background-color: @main-background !important;
+  }
+  // similar searches border
+  .appbar
+    #extabar
+    div[role="navigation"]
+    > div:nth-of-type(2)
+    > div
+    > div:last-of-type {
+    background-color: @border !important;
+  }
+  // card background
+  .appbar #extabar div[role="navigation"] g-scrolling-carousel a {
+    background-color: @accent-background !important;
+  }
+  // card text
+  .appbar
+    #extabar
+    div[role="navigation"]
+    g-scrolling-carousel
+    a
+    > div
+    > div:last-of-type
+    > div
+    > div {
+    color: @main-text !important;
+  }
+  // todo:
+  // card widget
+  // translate widget
 }
