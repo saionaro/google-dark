@@ -1,0 +1,14 @@
+{
+  "name": "Google Search Dark",
+  "version": "0.1",
+  "description": "Dark Side of Google",
+  "manifest_version": 2,
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["https://www.google.com/search?*"],
+      "css": ["style.css"]
+    }
+  ],
+  "icons": {}
+}

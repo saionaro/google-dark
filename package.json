@@ -1,0 +1,17 @@
+{
+  "name": "google-dark",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node ./scripts/build.js && npm run build:style",
+    "build:style": "lessc src/style.less dist/style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "install": "^0.13.0",
+    "less": "^3.11.1"
+  }
+}
