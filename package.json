@@ -11,7 +11,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "install": "^0.13.0",
     "less": "^3.11.1"
   }
 }
