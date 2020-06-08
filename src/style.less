@@ -33,6 +33,7 @@
     background-color: @main-background;
   }
 
+  h2,
   h3 {
     color: @main-text !important;
   }
@@ -282,6 +283,96 @@
   g-right-button g-fab span {
     background-color: @accent-background !important;
   }
+
+  g-more-link a span > span {
+    color: @link;
+  }
+
+  g-section-with-header a div div div + div span:first-of-type {
+    color: @main-text !important;
+  }
+
+  g-section-with-header > div + div > div > div {
+    border-color: @border !important;
+  }
+
+  g-accordion-expander > div > div {
+    color: @main-text !important;
+  }
+
+  // translate
+  #search > div > h1 + div > div:first-of-type > div > div:first-of-type {
+    border-color: @border;
+  }
+
+  g-expandable-container {
+    background-color: @accent-background;
+    border-radius: 7px;
+  }
+
+  g-expandable-container
+    > div:first-of-type
+    > div:first-of-type
+    > div:first-of-type {
+    border-color: @border !important;
+  }
+
+  g-expandable-container .source-language,
+  g-expandable-container .target-language {
+    color: @main-text !important;
+  }
+
+  #tw-source-text-container textarea {
+    color: @main-text !important;
+  }
+
+  #tw-source-rmn-container > pre > span {
+    color: @accent-text !important;
+  }
+
+  #tw-target {
+    background-color: @accent-background !important;
+  }
+
+  #tw-target-text span {
+    color: @main-text !important;
+  }
+
+  #tw-target-rmn-container pre span {
+    color: @accent-text !important;
+  }
+
+  #tw-images + hr + div > span {
+    color: @accent-text !important;
+  }
+
+  #tw-images + hr + div > span > span {
+    color: @main-text !important;
+  }
+
+  #tw-bilingual > div > div > div:first-of-type {
+    color: @main-text !important;
+  }
+
+  #tw-bilingual > div > div > div:nth-of-type(2) .tw-bilingual-entry > div,
+  #tw-bilingual
+    > div
+    > div
+    > div:nth-of-type(2)
+    .tw-bilingual-entry
+    > span
+    > span {
+    color: @main-text !important;
+  }
+
+  g-expandable-container hr {
+    border-color: @border !important;
+  }
+
+  g-inline-toggler {
+    border-color: @border !important;
+  }
+
   // similar searches
   .appbar #extabar div[role="navigation"] > div:first-of-type {
     background-color: @main-background !important;
@@ -311,9 +402,9 @@
     > div {
     color: @main-text !important;
   }
+
   // todo:
   // card widget
-  // translate widget
   // menu widget
-  // apps widget
+  // movie info widget
 }
