@@ -1,3 +1,5 @@
 node_modules
 dist
 yarn.lock
+dist.crx
+dist.pem
